@@ -1,100 +1,95 @@
 /* Color variables */
 :root {
-    --white-color: #ffffff;
-    --bg-color: #f9f9f9;
-    --gray-color: #5f5f5f;
+  --white-color: #fff;
+  --bg-color: #fff;
+  --gray-color: #ccc;
+}
+
+/* Changing background color */
+body {
+  background: var(--bg-color) !important;
+}
+
+/* Changing link color */
+.nav-item .nav-link {
+  color: var(--white-color);
+}
+
+/* Hero section background image */
+.hero {
+  height: 100vh;
+  background-image: url("https://www.technopat.net/sosyal/eklenti/sun_9-wallpaper-5120x2880-jpg.1714356/");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#skills i {
+  height: 100px;
+  width: 100px;
+}
+
+#portfolio img {
+  height: 300px;
+  object-fit: cover;
+}
+
+#about .img,
+#about img,
+.hire-text h2 {
+  position: relative;
+}
+
+/* Timeline background line */
+#about .img::before {
+  content: "";
+  left: 50%;
+  width: 4px;
+  position: absolute;
+  height: calc(100% + 140px);
+  background: var(--gray-color);
+}
+
+#about img,
+#about .hire-text h2 {
+  width: 140px;
+}
+
+#about .hire-text h2 {
+  height: 140px;
+}
+
+.social-icons a {
+  width: 40px;
+  height: 40px;
+}
+
+footer .social-icons a {
+  width: 30px;
+  height: 30px;
+}
+
+#cv img {
+  width: 230px;
+}
+
+/* Contact section background image */
+#contact {
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-image: url("https://cdn.bookingcare.vn/fo/2022/11/11/090605-c516ed9fdeffcdcf8345b71dd221b616.jpg");
+}
+
+@media screen and (max-width: 990px) {
+  #skills .card {
+    width: calc(100% / 2 - 10px) !important;
   }
-  
-  /* Changing background color */
-  body {
-    background: var(--bg-color) !important;
+}
+
+@media screen and (max-width: 668px) {
+  #skills .card,
+  #portfolio .card-wrapper {
+    width: 100% !important;
   }
-  
-  /* Changing link color */
-  .nav-item .nav-link {
-    color: var(--white-color);
-  }
-  
-  /* Hero section background image */
-  .hero {
-    height: 100vh;
-    background-image: url("background-image: url("https://drive.google.com/uc?id=1p2Z8WVpM-_KkP9f4N7If-tmwwP7npzV7");");
-    background-repeat: no-repeat;
-    background-position: 60% 0%;
-    background-size: cover;
-    background-attachment: fixed;
-  }
-  
-  #skills i {
-    height: 100px;
-    width: 100px;
-  }
-  
-  #portfolio img {
-    height: 300px;
-    object-fit: cover;
-  }
-  
-  #about .img,
-  #about img,
-  .hire-text h2 {
-    position: relative;
-  }
-  
-  /* Timeline background line */
-  #about .img::before {
-    content: "";
-    left: 50%;
-    width: 4px;
-    position: absolute;
-    height: calc(100% + 140px);
-    background: var(--gray-color);
-  }
-  
-  #about img,
-  #about .hire-text h2 {
-    width: 140px;
-  }
-  
-  #about .hire-text h2 {
-    height: 140px;
-  }
-  
-  .social-icons a {
-    width: 40px;
-    height: 40px;
-  }
-  
-  footer .social-icons a {
-    width: 30px;
-    height: 30px;
-  }
-  
-  #cv img {
-    width: 230px;
-  }
-  
-  /* Contact section background image */
-  #contact {
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    background-image: url("https://cacanh24.com/wp-content/uploads/2023/05/c516ed9fdeffcdcf8345b71dd221b616.jpg");
-  }
-  
-  @media screen and (max-width: 990px) {
-    #skills .card {
-      width: calc(100% / 2 - 10px) !important;
-    }
-  }
-  
-  @media screen and (max-width: 668px) {
-    #skills .card,
-    #portfolio .card-wrapper {
-      width: 100% !important;
-    }
-   #about .hire-text h2 {
-     height: 70px;
-     width: 70px;
-   }
-  }
+}
